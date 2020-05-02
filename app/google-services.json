@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "626966784346",
+    "firebase_url": "https://dronamfooddelivery-android.firebaseio.com",
+    "project_id": "dronamfooddelivery-android",
+    "storage_bucket": "dronamfooddelivery-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626966784346:android:63a0d07deb47c1fac8ab63",
+        "android_client_info": {
+          "package_name": "com.miracle.dronam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626966784346-o7l5fj8nefboq8r2epmv67j6u3sa29qd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miracle.dronam",
+            "certificate_hash": "34fab2417ffcc87b05842e2cc291042ecc74c907"
+          }
+        },
+        {
+          "client_id": "626966784346-gtb5sdn0h68tf1c2b22ibo794eect45d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miracle.dronam",
+            "certificate_hash": "49d4c1b51f755ebf5f09549b3721275393b6be85"
+          }
+        },
+        {
+          "client_id": "626966784346-coff03f1oitfpheb5tqou2hfhihqd68p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbEm2AlpysyVHEUMOZkdmj_l_95mp7CaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626966784346-coff03f1oitfpheb5tqou2hfhihqd68p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

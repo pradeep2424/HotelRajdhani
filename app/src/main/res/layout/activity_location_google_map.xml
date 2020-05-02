@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_rootLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_google_location_search" />
+
+    <!--    <View-->
+    <!--        android:layout_below="@+id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="#e7e7e7" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <com.miracle.rajdhani.custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_set_delivery_location"
+            android:textColor="@color/main_text"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_searchAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle_white"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <com.miracle.rajdhani.custom.MyEditText
+                android:id="@+id/et_searchAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:hint="@string/location_search_box_text"
+                android:textColor="@color/main_text"
+                android:textColorHint="@color/light_gray_hint"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_search"
+                android:tint="#d0d0d0" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_light" />
+
+        <include
+            android:id="@+id/view_currentLocation"
+            layout="@layout/item_place_current_location_layout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/places_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:visibility="gone"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></androidx.recyclerview.widget.RecyclerView>
+
+        <!--        <dronamhotel.custom.MyTextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="22dp"-->
+        <!--            android:background="@drawable/rectangle_orange"-->
+        <!--            android:gravity="center_horizontal"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:text="@string/search_button"-->
+        <!--            android:textColor="#ffffff"-->
+        <!--            android:textSize="14.4sp" />-->
+    </LinearLayout>
+
+    <!--    <com.roughike.bottombar.BottomBar-->
+    <!--        android:id="@+id/bottomBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        app:bb_tabXmlResource="@xml/bottombar" />-->
+
+
+</RelativeLayout>

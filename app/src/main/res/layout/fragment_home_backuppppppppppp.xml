@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.miracle.rajdhani.utils.StickyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_home_location" />
+
+<!--            <include layout="@layout/toolbar_home_search" />-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@mipmap/temp_white_img" />
+<!--                <include layout="@layout/toolbar_home_search" />-->
+
+            </FrameLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:tag="sticky"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="14dp"-->
+            <!--                android:layout_marginLeft="24.3dp"-->
+            <!--                android:layout_marginRight="24.7dp"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingLeft="16.7dp"-->
+            <!--                android:paddingBottom="15.3dp"-->
+            <!--                android:paddingTop="15dp"-->
+            <!--                android:background="@drawable/food_curve_rect">-->
+
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="17dp"-->
+            <!--                    android:layout_height="28.3dp"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:src="@drawable/ic_location"/>-->
+
+            <!--                <customfonts.MyTextView_Lato_Light-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Brose Near By Place"-->
+            <!--                    android:layout_marginLeft="14.3dp"-->
+            <!--                    android:textSize="16.7sp"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:textColor="#373737"/>-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="15dp"-->
+            <!--                    android:layout_height="21.3dp"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginRight="16.3dp"-->
+            <!--                    android:tint="#373737"-->
+            <!--                    android:src="@drawable/ic_right_arrow"/>-->
+
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_dishUserLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="horizontal">
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="You might like"
+                        android:textColor="#373737"
+                        android:textSize="19sp" />
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See all"
+                        android:textColor="#a5a5a5"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_dishUserLike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:divider="#fff"
+                        android:dividerHeight="0dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="16dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="horizontal">
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/food"
+                        android:textColor="#373737"
+                        android:textSize="19sp" />
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See all"
+                        android:textColor="#a5a5a5"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_cuisine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:divider="#fff"
+                        android:dividerHeight="0dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="16dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="horizontal">
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/restaurant_text"
+                        android:textColor="#373737"
+                        android:textSize="19sp" />
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See all"
+                        android:textColor="#a5a5a5"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_restaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingTop="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:clipToPadding="false"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.miracle.rajdhani.custom.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/powered_by"
+                    android:textColor="@color/light_gray_hint"
+                    android:textSize="12sp" />
+
+                <com.miracle.rajdhani.custom.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/powered_by_name"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.miracle.rajdhani.utils.StickyScrollView>
+</LinearLayout>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".bottomMenu.OrdersFragment">-->
+
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_centerHorizontal="true"-->
+    <!--    android:layout_centerVertical="true"-->
+    <!--    android:text="Home" />-->
+
+    <!--</RelativeLayout>-->
+

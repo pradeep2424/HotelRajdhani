@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".signUp.GetStartedVerifyOTPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+            <!--   #fdf8f7 -->
+
+            <include
+                android:id="@+id/view_toolbarOTP"
+                layout="@layout/toolbar_back_arrow_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_toolbarOTP"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-20dp"
+                    android:src="@mipmap/ic_otp1" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_back"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="left"
+                        android:text="@string/login_verify_awesome"
+                        android:textColor="@color/main_text"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:id="@+id/tv_otpText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="left"
+                        android:text="@string/login_verify_otp_text"
+                        android:textColor="@color/main_text"
+                        android:textSize="18sp" />
+
+                    <com.mukesh.OtpView
+                        android:id="@+id/otp_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textColor="@color/main_text"
+                        android:textSize="16sp"
+                        app:itemCount="6"
+                        app:itemSpacing="10dp"
+                        app:itemWidth="40dp"
+                        app:lineColor="@color/menu_inactive"
+                        app:viewType="line" />
+
+                    <!--            <in.aabhasjindal.otptextview.OtpTextView-->
+                    <!--                android:id="@+id/otp_view"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:textColor="@color/main_text"-->
+                    <!--                app:bar_active_color="@color/deep_orange"-->
+                    <!--                app:bar_enabled="true"-->
+                    <!--                app:bar_error_color="@color/red"-->
+                    <!--                app:bar_height="1.5dp"-->
+                    <!--                app:bar_inactive_color="@color/menu_inactive"-->
+                    <!--                app:bar_margin_bottom="0dp"-->
+                    <!--                app:bar_margin_left="2dp"-->
+                    <!--                app:bar_margin_right="2dp"-->
+                    <!--                app:bar_success_color="@color/success_green"-->
+                    <!--                app:box_margin="0dp"-->
+                    <!--                app:height="40dp"-->
+                    <!--                app:hide_otp="true"-->
+                    <!--                app:length="6"-->
+                    <!--                app:otp=""-->
+                    <!--                app:otp_text_size="20dp"-->
+                    <!--                app:width="40dp" />-->
+
+                    <!--            <in.aabhasjindal.otptextview.OtpTextView-->
+                    <!--                android:id="@+id/otp_view"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_gravity="center"-->
+                    <!--                android:textColor="@color/main_text"-->
+                    <!--                app:bar_active_color="@color/deep_orange"-->
+                    <!--                app:bar_height="2dp"-->
+                    <!--                app:bar_inactive_color="@color/otp_border"-->
+                    <!--                app:height="40dp"-->
+                    <!--                app:length="6"-->
+                    <!--                app:otp_text_size="22dp"-->
+                    <!--                app:padding="3dp"-->
+                    <!--                app:width="40dp" />-->
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:id="@+id/tv_otpResend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Resend OTP"
+                        android:textColor="@color/deep_orange"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:id="@+id/tv_otpTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/otp_wait_for"
+                        android:textColor="@color/deep_orange"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_nameDetails"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/rectangle_orange"
+                    android:gravity="right"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Confirm"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

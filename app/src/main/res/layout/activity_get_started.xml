@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_gray_border"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <com.miracle.rajdhani.custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Skip"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+
+        <com.miracle.rajdhani.custom.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dronam"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff" />
+
+        <com.miracle.rajdhani.custom.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9dp"
+            android:text="@string/food_delivery"
+            android:textColor="#f05421"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <com.miracle.rajdhani.custom.MyTextView
+        android:id="@+id/tv_joinFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_logoLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/join_family"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+    <!--    <dronamhotel.custom.MyTextView-->
+    <!--        android:id="@+id/tv_signUp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="35dp"-->
+    <!--        android:layout_marginTop="55dp"-->
+    <!--        android:layout_marginRight="35dp"-->
+    <!--        android:background="@drawable/rectangle_orange"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:padding="16dp"-->
+    <!--        android:text="@string/sign_up"-->
+    <!--        android:textAllCaps="true"-->
+    <!--        android:textColor="#ffffff"-->
+    <!--        android:textSize="14sp" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_joinFamily"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_privacyAndTerms">
+
+            <LinearLayout
+                android:id="@+id/ll_connectWithMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rect_red"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <com.miracle.rajdhani.custom.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/connect_with_mobile_no"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_connectWithMobileNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_circle"
+                android:padding="8dp">
+
+                <com.miracle.rajdhani.custom.MyTextView
+                    android:id="@+id/tv_or"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_socialMedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_or"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_google"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_orange"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_google1" />
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/connect_with_google"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_blue"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_facebook" />
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/connect_with_facebook"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/ll_login"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginBottom="28dp"-->
+        <!--            android:gravity="center_horizontal"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <dronamhotel.custom.MyTextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/already_have_account"-->
+        <!--                android:textColor="#ffffff"-->
+        <!--                android:textSize="14sp" />-->
+
+        <!--            <dronamhotel.custom.MyTextView-->
+        <!--                android:id="@+id/tv_login"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginLeft="5dp"-->
+        <!--                android:text="@string/login"-->
+        <!--                android:textColor="#d22532"-->
+        <!--                android:textSize="14sp" />-->
+        <!--        </LinearLayout>-->
+
+        <com.miracle.rajdhani.custom.MyTextView
+            android:id="@+id/tv_privacyAndTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/terms_and_privacy"
+            android:textColor="#ffffff"
+            android:textColorLink="@color/signup_link_text_color"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

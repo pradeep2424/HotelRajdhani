@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/view_toolbar"
+                layout="@layout/toolbar_back_arrow_white" />
+
+            <LinearLayout
+                android:id="@+id/ll_logoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="90dp"
+                android:orientation="horizontal">
+
+                <com.miracle.rajdhani.custom.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dronam"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff" />
+
+                <com.miracle.rajdhani.custom.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="9dp"
+                    android:text="@string/food_delivery"
+                    android:textColor="#f05421"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <!--    <dronamhotel.custom.MyTextView-->
+            <!--        android:id="@+id/tv_signUp"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginLeft="35dp"-->
+            <!--        android:layout_marginTop="55dp"-->
+            <!--        android:layout_marginRight="35dp"-->
+            <!--        android:background="@drawable/rectangle_orange"-->
+            <!--        android:gravity="center_horizontal"-->
+            <!--        android:padding="16dp"-->
+            <!--        android:text="@string/sign_up"-->
+            <!--        android:textAllCaps="true"-->
+            <!--        android:textColor="#ffffff"-->
+            <!--        android:textSize="14sp" />-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_logoLayout"
+                android:layout_margin="35dp"
+                android:orientation="vertical">
+
+                <com.miracle.rajdhani.custom.MyTextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="@string/get_started_with_mobile"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_text"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
+
+                    <com.miracle.rajdhani.custom.MyEditText
+                        android:id="@+id/et_mobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:hint="@string/mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/et_fname"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="7dp"
+                        android:background="#33ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_nameDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_mobileNo"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/ll_fname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_text"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.miracle.rajdhani.custom.MyEditText
+                            android:id="@+id/et_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:hint="@string/first_name"
+                            android:inputType="text"
+                            android:textColor="#ffffff"
+                            android:nextFocusForward="@+id/et_lname"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="#ffffff"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:background="#33ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_lname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_text"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.miracle.rajdhani.custom.MyEditText
+                            android:id="@+id/et_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:hint="@string/last_name"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="7dp"
+                            android:background="#33ffffff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--        <LinearLayout-->
+                <!--            android:id="@+id/ll_mobileNo"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@+id/tv_text"-->
+                <!--            android:layout_marginTop="20dp"-->
+                <!--            android:background="@drawable/rectangle_white"-->
+                <!--            android:orientation="horizontal"-->
+                <!--            android:paddingTop="15dp"-->
+                <!--            android:paddingBottom="15dp">-->
+
+                <!--            <ImageView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginLeft="15dp"-->
+                <!--                android:src="@drawable/facebook_176"-->
+                <!--                android:tint="#d0d0d0" />-->
+
+                <!--            <dronamhotel.custom.MyTextView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:paddingLeft="10dp"-->
+                <!--                android:paddingRight="15dp"-->
+                <!--                android:text="@string/enter_mobile_number"-->
+                <!--                android:textAllCaps="false"-->
+                <!--                android:textColor="@color/main_dark_text"-->
+                <!--                android:textSize="14sp" />-->
+
+                <!--        </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_nameDetails"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/rectangle_orange"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <com.miracle.rajdhani.custom.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Confirm"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

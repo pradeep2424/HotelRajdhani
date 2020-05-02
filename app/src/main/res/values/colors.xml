@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+<!--    <color name="colorAccent">#03A9F4</color>-->
+
+    <color name="blue_light_shade">#00c3dd</color>
+
+    <color name="colorAccent">#FF5722</color>
+
+    <color name="deep_orange">#ff3d00</color>
+    <color name="dark_orange">#f05421</color>
+    <color name="light_orange">#FF9E80</color>
+    <color name="orange">#FF9800</color>
+    <color name="card_bg_light">#fffbf5</color>
+    <color name="orange_50">#fff3e0</color>
+    <color name="link_orange">#b96f19</color>
+
+    <color name="gray">#6f7279</color>
+
+    <color name="menu_active">#f15421</color>
+    <color name="menu_inactive">#c7c7cc</color>
+<!--    <color name="menu_inactive">#d3d3d3</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="dark_blue">#2d5da1</color>
+
+    <color name="dark_red">#d22532</color>
+    <color name="light_green_500">#8bc34a</color>
+    <color name="light_green_700">#689F38</color>
+    <color name="light_gray_hint">#9b9b9b</color>
+    <color name="main_text">#4a4a4a</color>
+    <color name="main_dark_text">#2f2f39</color>
+    <color name="colorBackgroundWhite">#f0f2ea</color>
+
+    <color name="view_cart_strip">#7bc242</color>  <!--  5fb709 -->
+    <color name="view_cart_strip1">#5fb709</color>
+
+
+    <color name="divider_light">#f5f5f5</color>
+    <color name="divider_dark">#e2e2e2</color>
+    <color name="smokegray">#f2f2f2</color>
+
+<!--    <color name="otp_border">#c7c7cc</color>-->
+    <color name="success_green">#33cc33</color>
+
+    <color name="view_light">#f5f5f5</color>
+    <color name="transparent">#60000000</color>
+    <color name="signup_link_text_color">#00aefc</color>
+
+
+<!--    <color name="white">#FFFFFF</color>-->
+<!--    <color name="red_active">#f44336</color>-->
+<!--    <color name="purple_active">#9c27b0</color>-->
+<!--    <color name="blue_active">#03a9f4</color>-->
+<!--    <color name="green_active">#4caf50</color>-->
+<!--    <color name="blue_grey_active">#607d8b</color>-->
+<!--    <color name="yellow_active">#ffeb3b</color>-->
+<!--    <color name="orange_active">#ff9800</color>-->
+<!--    <color name="grey_active">#9e9e9e</color>-->
+
+<!--    <color name="red_inactive">#e57373</color>-->
+<!--    <color name="purple_inactive">#ba68c8</color>-->
+<!--    <color name="blue_inactive">#64b5f6</color>-->
+<!--    <color name="green_inactive">#81c784</color>-->
+<!--    <color name="blue_grey_inactive">#90a4ae</color>-->
+<!--    <color name="yellow_inactive">#fff176</color>-->
+<!--    <color name="orange_inactive">#ffb74d</color>-->
+<!--    <color name="gery_inactive">#e0e0e0</color>-->
+
+<!--    <color name="default_inactive">#78909c</color>-->
+
+<!--    <color name="red_bg_light">#ffebee</color>-->
+<!--    <color name="purple_bg_light">#f3e5f5</color>-->
+<!--    <color name="blue_bg_light">#e3f2fd</color>-->
+<!--    <color name="green_bg_light">#e8f5e9</color>-->
+<!--    <color name="blue_grey_bg_light">#eceff1</color>-->
+<!--    <color name="yellow_bg_light">#fffde7</color>-->
+<!--    <color name="orange_bg_light">#fff3e0</color>-->
+<!--    <color name="grey_bg_light">#fafafa</color>-->
+</resources>
